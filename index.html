@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //calling different names
+        function name(prompt="Vicky"){
+            console.log("Hello ",prompt);
+        }
+        name("Vinay");
+        name("sumanth");
+        name("Srinu");
+        name();
+        //sum function
+        function sum(a,b){
+            return a+b;
+        }
+        console.log(sum(2,4))
+        console.log(sum(7,4))
+        console.log(sum(30,4))
+        console.log(sum(2,69))
+        console.log(sum(90,4))
+        //square funtion
+        function square(a){
+            return a*a;
+        }
+        console.log(square(5));
+        console.log(square(3));
+        console.log(square(34));
+        console.log(square(23));
+        console.log(square(7));
+        console.log(square(69));
+        //array average funtion
+        function average(arr){
+            total = 0
+            for(num of arr){
+                total+=num;
+            }
+            return total/arr.length;
+        }
+        console.log(average([2,5,2]));
+        //vowels function
+        function vowels(str){
+            for(char of str){
+                if (char ==="a" || char==="e" || char ==="i" || char ==="o" || char ==="u"){
+                    return "It contains vowels"
+                    break
+                }
+            }
+            return "It doesnot Contains Vowels"
+        }
+        console.log(vowels("hello"));
+        console.log(vowels("vikky"));
+        console.log(vowels("bcdfg"));
+        //temparature conversion
+        function convertTemp(temp,scale){
+            if (scale ==="C"){
+                return (temp-32)*(5/9) + " C";
+            }
+            else{
+                return (temp*9/5)+32 + " F";
+            }
+        }
+        console.log(convertTemp(34,"F"));
+        console.log(convertTemp(37,"C"));
+        console.log(convertTemp(39,"F"));
+
+
+
+    </script>
+</body>
+</html>
